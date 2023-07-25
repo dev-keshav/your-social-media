@@ -1,0 +1,50 @@
+/* src/components/FrontPage.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+  
+  .login-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #2980b9;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #1a5276;
+    transform: translateY(-2px);
+  }
+  
+  .login-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
