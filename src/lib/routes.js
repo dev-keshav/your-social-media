@@ -9,6 +9,7 @@ import Profile from "components/profile";
 import Users from "components/users";
 import Page404 from "components/page404";
 import FirstPage from "components/firstPage";
+import Sidebar from "components/layout/Sidebar";
 
 export const ROOT = "/";
 export const PAGENOTFOUND = "*";
@@ -18,6 +19,7 @@ export const REGISTER = "/register";
 export const PROTECTED = "/protected";
 export const DASHBOARD = "/protected/dashboard";
 export const USERS = "/protected/users";
+export const SIDEBAR = "/protected/sidebar";
 export const PROFILE = "/protected/profile/:id";
 export const COMMENTS = "/protected/comments/:id";
 
@@ -33,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: DASHBOARD,
         element: <Dashboard />,
+      },
+      {
+        path: SIDEBAR,
+        element: <Sidebar />
       },
       {
         path: USERS,

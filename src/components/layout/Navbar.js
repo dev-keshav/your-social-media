@@ -1,5 +1,5 @@
-import { Button, Flex, Link } from "@chakra-ui/react";
-import { DASHBOARD } from "lib/routes";
+import { Button, Flex, Hide, Link, Show } from "@chakra-ui/react";
+import { DASHBOARD, SIDEBAR } from "lib/routes";
 import { Link as RouterLink } from "react-router-dom";
 import { useLogout } from "hooks/auth";
 
@@ -22,6 +22,29 @@ export default function Navbar() {
         <Link color="purple" as={RouterLink} to={DASHBOARD} fontWeight="bold">
           Home
         </Link>
+        <Show below="md">
+          <Button
+            ml="auto"
+            as={RouterLink}
+            to={SIDEBAR}
+            variant="outline"
+            colorScheme="purple"
+          >
+            Profile
+          </Button>
+        </Show>
+        <Hide above="sm">
+          <Button
+            ml="auto"
+            as={RouterLink}
+            to={SIDEBAR}
+            variant="outline"
+            colorScheme="purple"
+          >
+            Profile
+          </Button>
+        </Hide>
+
         <Button
           ml="auto"
           colorScheme="purple"
