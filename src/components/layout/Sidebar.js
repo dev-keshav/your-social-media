@@ -4,7 +4,7 @@ import { PROTECTED, USERS } from "lib/routes";
 import { Link } from "react-router-dom";
 import Avatar from "components/profile/Avatar";
 
-function ActiveUser() {
+export function ActiveUser() {
   const { user, isLoading } = useAuth();
 
   if (isLoading) return "Loading...";

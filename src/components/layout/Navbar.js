@@ -2,6 +2,7 @@ import { Button, Flex, Hide, Link, Show } from "@chakra-ui/react";
 import { DASHBOARD, SIDEBAR } from "lib/routes";
 import { Link as RouterLink } from "react-router-dom";
 import { useLogout } from "hooks/auth";
+import SmallSidebar from "./SmallSidebar";
 
 export default function Navbar() {
   const { logout, isLoading } = useLogout();
@@ -33,7 +34,7 @@ export default function Navbar() {
             Profile
           </Button>
         </Show>
-        <Hide above="sm">
+        {/* <Hide above="sm">
           <Button
             ml="auto"
             as={RouterLink}
@@ -43,7 +44,7 @@ export default function Navbar() {
           >
             Profile
           </Button>
-        </Hide>
+        </Hide> */}
 
         <Button
           ml="auto"

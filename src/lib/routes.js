@@ -10,6 +10,7 @@ import Users from "components/users";
 import Page404 from "components/page404";
 import FirstPage from "components/firstPage";
 import Sidebar from "components/layout/Sidebar";
+import SmallSidebar from "components/layout/SmallSidebar";
 
 export const ROOT = "/";
 export const PAGENOTFOUND = "*";
@@ -38,7 +39,7 @@ export const router = createBrowserRouter([
       },
       {
         path: SIDEBAR,
-        element: <Sidebar />
+        element: <SmallSidebar />
       },
       {
         path: USERS,
