@@ -28,16 +28,19 @@ export default function Profile() {
   return (
     <Stack spacing="5">
       <Flex p={["4", "6"]} pos="relative" align="center">
-        <Avatar size="2xl" user={user} />
+        <Avatar size="xl" user={user} />
+        <br />  
 
         {!authLoading && authUser.id === user.id && (
           <Button
+            size="sm"
             pos="absolute"
             mb="2"
             top="6"
             right="6"
             colorScheme="purple"
             onClick={onOpen}
+            sx={{}}
           >
             Change avatar
           </Button>
