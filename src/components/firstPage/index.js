@@ -9,7 +9,7 @@ const FirstPage = () => {
     <div className="container">
       <h1 className="logo">Your Social Media</h1>
       <p className="tagline">
-        Jaldi-Jaldi Connect Ho Jao Sab
+        Let's Connect Together
       </p>
       <Link className="login-btn" to={"/login"}>Login</Link>
     </div>
