@@ -22,7 +22,7 @@ function NewPost() {
     <Box maxW="600px" mx="auto" py="10">
       <form onSubmit={handleSubmit(handleAddPost)}>
         <HStack justify="space-between">
-          <Heading size="lg">Ek post dal do</Heading>
+          <Heading size="lg">Start a post</Heading>
           <Button 
             colorScheme="purple"
             type="submit"
